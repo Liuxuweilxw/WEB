@@ -1,0 +1,184 @@
+.loading {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background: url("../images/loading.gif") no-repeat center;
+    background-color: #ffffff;
+    z-index: 2019;
+    overflow: hidden;
+}
+.m .button {
+    display: inline-block;
+    height: 50px;
+    width: 747px;
+    text-align: center;
+    line-height: 50px;
+    border-bottom: 1px solid #c81523;
+}
+.m .button:hover {
+    color: #c81523;
+}
+
+.shixi_body .top {
+    width: 1500px;
+    height: 50px;
+    margin: 0 auto;
+    border-bottom: 1px solid #c81523;
+    /*background-color: #cccccc;*/
+}
+.shixi_body .top .top-box {
+    display: inline-block;
+    height: 50px;
+    width: 496px;
+    text-align: center;
+    line-height: 50px;
+    /*background-color: #67CF22;*/
+}
+/*.shixi_body .top .top-box {*/
+/*    display: inline-block;*/
+/*    height: 50px;*/
+/*    width: 496px;*/
+/*    text-align: center;*/
+/*    line-height: 50px;*/
+/*    !*background-color: #67CF22;*!*/
+/*}*/
+.shixi_body .top .top-box:hover {
+    color: #c81523;
+}
+
+.shixi_body .function  {
+    display: block;
+    width: 1500px;
+    height: 600px;
+    /*background-color: red;*/
+}
+
+.shixi_body  .function .function-title {
+    height: 30px;
+    width: 1500px;
+    border-bottom: 1px solid #c81523;
+}
+
+.shixi_body .function .function-title .title {
+    display: block;
+    float: left;
+    height: 30px;
+    width: 298px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.shixi_body .function .function-title .title:hover {
+    color: #c81523;
+}
+
+.shixi_body .shijian .function-title .title {
+
+    display: block;
+    float: left;
+    height: 30px;
+    width: 498px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.shixi_body .function .function-content {
+    width: 1500px;
+    height: 570px;
+}
+.shixi_body .function .function-content .content {
+    width: 1500px;
+    height: 570px;
+    padding-top: 30px;
+    background-color: #cccccc;
+}
+
+.shixi_body .shixi .apply .content_box {
+    width: 500px;
+    height: 500px;
+    /*background-color: #cccccc;*/
+    margin: 0 auto;
+
+}
+.shixi_body .shixi .apply .content_box .content_list {
+    width: 500px;
+    height: 60px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+
+.shixi_body .shixi .apply .content_box .submit input{
+    width: 100px;
+    height: 40px;
+    display: block;
+    font-size: 20px;
+    margin: 20px auto;
+}
+
+.shixi_body .shixi .apply .content_box .content_list .text {
+    display: block;
+    float: left;
+    width: 400px;
+    height: 100%;
+    font-size: 50px;
+    margin-right: 20px;
+}
+.shixi_body .shixi .apply .content_box .content_list .check {
+    font-size: 20px;
+    line-height: 60px;
+}
+
+.info_body {
+    width: 1500px;
+    height: 500px;
+    margin-top: 20px;
+    /*background-color: #cccccc;*/
+}
+.info_body .box {
+    float: left;
+}
+.info_body .left {
+    width: 300px;
+    height: 500px;
+    margin-top: 150px;
+    margin-left: 10px;
+    /*background-color: antiquewhite;;*/
+}
+.info_body .right {
+    width: 1150px;
+    height: 500px;
+    margin-top: 50px;
+    margin-left: 40px;
+    /*margin-right: 10px;*/
+    background-color: #cccccc;;
+}
+.info_body .left p {
+    width: 300px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.info_body .left .usrbox_clearfix {
+    width: 298px;
+    /*background-color: #cccccc;*/
+    margin: 5px 0;
+    height: 50px;
+}
+
+.info_body .left .usrbox_clearfix .tag {
+    float: right;
+}
+.info_body .left .usrbox_clearfix .display {
+    float: right;
+    width: 160px;
+    margin-left: 10px;
+
+}
+
+
+
+.footer {
+    margin-top: 240px;
+}

@@ -1,0 +1,73 @@
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    border-bottom: 3px solid #c81523;
+}
+
+.header .logo {
+    padding: 10px 5px;
+}
+
+.registerarea {
+    height: 522px;
+    border: 1px solid #cccccc;
+    margin-top: 20px;
+}
+
+.reg_hd {
+    height: 42px;
+    background-color: #cccccc;
+    border-bottom: 1px solid #cccccc;
+    line-height: 42px;
+}
+
+.reg_hd h3 {
+    float: left;
+    padding-left: 10px;
+}
+
+.reg_hd .login {
+    float: right;
+    padding-right: 10px;
+}
+
+.reg_hd .login a {
+    color: red;
+}
+
+.reg_form {
+    width: 700px;
+    margin: 50px auto 0;
+}
+
+.reg_form ul li label {
+    display: inline-block;
+    width: 88px;
+    text-align: right;
+}
+
+.reg_form ul li input {
+    width: 242px;
+    height: 37px;
+    border: 1px solid #cccccc;
+}
+
+.reg_form ul li {
+    padding-bottom: 40px;
+}
+
+.error {
+    color: red;
+    margin-left: 5px;
+}
+
+.error_icon {
+    vertical-align: middle;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url(../images/error_icon.jpg) no-repeat;
+}

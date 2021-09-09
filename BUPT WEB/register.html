@@ -1,0 +1,119 @@
+<!--注册页/-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BUPT 注册管理</title>
+    <meta name="description" content="北京邮电大学 Beijing University of Posts and Telecommunications 研究生实习实践管理平台">
+    <meta name="keywords" content="北京邮电大学，BUPT，Beijing University of Posts and Telecommunications，研究生，实习，实践，管理平台，注册">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/register.css">
+    <link rel="shortcut icon" href="bupt.ico">
+    <script src="js/jquery-3.5.1.min.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo">
+            <a href="index.html" title="BUPT研究生实习实践管理平台"><img src="images/logo.png" alt=""></a>
+        </div>
+        <div class="fr">
+                我有账户，去<a href="index.html">登录</a>
+        </div>
+    </div>
+    <div class="reg_area m">
+        <form class="reg_form" action="">
+            <div class="clearfix">
+                <label >注册类型:</label>
+                <input  name="idendity" type="radio" checked="checked" value="学生" style="height: 15px;width: 15px;margin-top: 25px;">学生
+                <input  name="idendity" type="radio"  value="教职工" style="height: 15px;width: 15px; margin-top: 25px">教职工
+            </div>
+            <div class="clearfix">
+                <label >学工号:</label>
+                <input id="userid" name="userid" type="text" placeholder="请输入10位学工号">
+                <span class="error"></span>
+            </div>
+            <div class="clearfix">
+                <label >姓名:</label>
+                <input id="name" name="name"  placeholder="请输入姓名">
+                <span class="error"></span>
+            </div>
+            <div class="clearfix">
+                <label >邮箱:</label>
+                <input id="email" name="email" type="email" placeholder="请输入邮箱">
+                <span class="error"></span>
+            </div>
+            <div class="clearfix">
+                <label >登陆密码:</label>
+                <input id="password" name="password" type="password" placeholder="请设置密码">
+                <span class="error"></span>
+            </div>
+            <div class="clearfix">
+                <label >确认密码:</label>
+                <input id="password_confirm" name="password_confirm" type="password " placeholder="请重新输入密码">
+                <span class="error"></span>
+            </div>
+            <div class="register">
+                <input type="submit" value="注册">
+            </div>
+        </form>
+    </div>
+    <div class="footer">
+        <div class="copyright">
+            版权所有 © 北京邮电大学  地址:北京市西土城路10号  邮编:100876  Powered by Liuxuwei
+        </div>
+    </div>
+
+<!--script-->
+    <script>
+        let $form = $('.reg_form')
+        $form.on('submit',function(e){
+            e.preventDefault()
+            let hash = {}
+            let need = ['userid','name','email','password','password_confirm']
+            need.forEach((name)=>{
+                let value = $form.find(`[name=${name}]`).val()
+                hash[name] = value
+            })
+            $form.find('.error').each((index, span)=>{
+                $(span).text('')
+            })
+            if(hash['userid'] === ''){
+                $form.find('[name="userid"]').siblings('.error')
+                .text('填写学号呀同学')
+            }
+            if(hash['name'] === ''){
+                $form.find('[name="name"]').siblings('.error')
+                    .text('填写姓名呀同学')
+            }
+            if(hash['email'] === ''){
+                $form.find('[name="email"]').siblings('.error')
+                    .text('填写邮箱呀同学')
+            }
+            if(hash['password'] === ''){
+                $form.find('[name="password"]').siblings('.error')
+                .text('请输入密码')
+            }
+            if(hash['password_confirm'] !== hash['password']){
+                $form.find('[name="password_confirm"]').siblings('.error')
+                .text('请重新输入')
+            }
+
+            $.post('/register', hash)
+                .then((response)=>{
+                    console.log(response)
+                }, (request)=>{
+                    let {errors} = request.responseJSON
+                    if(errors.email === 'invalid'){
+                        $form.find('[name="userid"]').siblings('.error')
+                            .text('邮箱格式不正确，请重新输入')
+                    }
+                })
+         })
+    </script>
+</body>
+
+</html>

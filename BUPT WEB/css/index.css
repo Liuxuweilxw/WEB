@@ -1,0 +1,96 @@
+.loading {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background: url("../images/loading.gif") no-repeat center;
+    background-color: #ffffff;
+    z-index: 2019;
+    overflow: hidden;
+}
+
+
+.m .sign_form {
+    width: 400px;
+    display: block;
+    margin: 0px auto;
+    padding-top: 150px;
+}
+
+.m .sign_form h3 {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.m .sign_form .usrbox_clearfix {
+    height: 54px;
+    width: 400px;
+    border: 1px solid black;
+    margin: 20px auto;
+}
+
+.usrbox_clearfix span {
+    float: right;
+    height: 52px;
+    width: 100px;
+    margin-top: 1px;
+    /*background-color: #cccccc;*/
+    font-size: 10px;
+    text-align: center;
+    line-height: 52px;
+    color: red;
+}
+.m .sign_form .usrbox_clearfix .icon {
+    float: left;
+    height: 52px;
+    width: 45px;
+}
+
+.m .sign_form .usrbox_clearfix .icon .icon_username {
+    height: 50px;
+    width: 45px;
+    display: inline-block;
+    background: url(../images/icon_username.png) no-repeat center;
+}
+.m .sign_form .usrbox_clearfix .icon .icon_password {
+    height: 50px;
+    width: 45px;
+    display: inline-block;
+    background: url(../images/icon_password.png) no-repeat center;
+}
+
+.m .sign_form .usrbox_clearfix input {
+    float: left;
+    height: 52px;
+    width: 250px;
+    font-size: 20px;
+
+}
+.m .sign_form .login_link .login_forpwd a {
+    font-size: 10px;
+}
+.m .sign_form .login_link .login_forpwd a:hover {
+    color: #c81523;
+}
+.m .sign_form .login_link .login_help a {
+    font-size: 10px;
+}
+.m .sign_form .login_link .login_help a:hover {
+    color: #c81523;
+}
+.m .sign_form .submit {
+    width: 400px;
+    height: 54px;
+}
+.m .sign_form .submit input {
+    display: block;
+    font-size: 20px;
+    height: 50px;
+    width: 100px;
+    margin: 20px auto;
+}
+
+/*footer*/
+.footer {
+    margin-top: 240px;
+}

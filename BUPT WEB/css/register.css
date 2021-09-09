@@ -1,0 +1,106 @@
+.header .login{
+    float: right;
+    padding-top: 33px;
+    padding-right: 30px;
+}
+
+.reg_area {
+    margin-top: 20px;
+}
+
+.login {
+    float: right;
+    padding-right: 10px;
+}
+
+.login a {
+    color: red;
+}
+
+.reg_form {
+    width: 800px;
+    margin: 150px auto 0;
+}
+
+.clearfix {
+    width: 100%;
+    height: 50px;
+    margin: 20px auto;
+}
+
+.clearfix input {
+    display: inline-block;
+    width: 300px;
+    height: 49px;
+    border: 1px solid black;
+    margin-left: 5px;
+    padding-left: 10px;
+    font-size: 20px;
+}
+
+.clearfix  label{
+    display: inline-block;
+    width: 235px;
+    height: 49px;
+    text-align: right;
+}
+
+.clearfix .error {
+    float: right;
+    height: 49px;
+    width: 235px;
+    color: red;
+    font-size: 10px;
+    line-height: 49px;
+    /*text-align: center;*/
+    /*background-color: #cccccc;*/
+}
+
+
+/*.error_phone_number_icon {*/
+/*    vertical-align: middle;*/
+/*    display: inline-block;*/
+/*    width: 20px;*/
+/*    height: 20px;*/
+/*    !*background: url(../images/error_icon.jpg) no-repeat;*!*/
+/*}*/
+
+/*.error_message_icon {*/
+/*    vertical-align: middle;*/
+/*    display: inline-block;*/
+/*    width: 20px;*/
+/*    height: 20px;*/
+/*    !*background: url(../images/error_icon.jpg) no-repeat;*!*/
+/*}*/
+
+/*.error_password_icon {*/
+/*    vertical-align: middle;*/
+/*    display: inline-block;*/
+/*    width: 20px;*/
+/*    height: 20px;*/
+/*    !*background: url(../images/error_icon.jpg) no-repeat;*!*/
+/*}*/
+
+/*.error_password_confirm_icon {*/
+/*    vertical-align: middle;*/
+/*    display: inline-block;*/
+/*    width: 20px;*/
+/*    height: 20px;*/
+/*    !*background: url(../images/error_icon.jpg) no-repeat;*!*/
+/*}*/
+.register {
+    width: 400px;
+    height: 54px;
+    margin: 0 auto;
+}
+.register input {
+    display: block;
+    font-size: 20px;
+    height: 50px;
+    width: 100px;
+    margin: 40px auto;
+}
+/*footer*/
+.footer {
+    margin-top: 90px;
+}

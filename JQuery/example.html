@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div {
+            height: 100px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+<input type="button" value ="关灯" id="btnone">
+<input type="button" value="开灯" id="btntwo">
+
+<div></div>
+<div></div>
+<div></div>
+</body>
+</html>
+
+<script src="jquery-1.12.4.js"></script>
+
+<script>
+    $(function () {
+        $('#btnone').click(function () {
+            $('body').css('backgroundColor','black')
+        });
+        $('#btntwo').click(function () {
+            $('body').css('backgroundColor','white')
+
+        })
+    });
+
+</script>

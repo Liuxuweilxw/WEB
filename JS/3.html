@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+	<style>
+		li {
+			list-style: none;
+		}
+		.tab .tab_list{
+			width: 700px;
+			margin: 10px auto;
+		}
+		.tab .tab_con { 
+			width: 650px;
+			margin: 1px auto;
+			border-top: 1px solid;
+		}
+		.tab .tab_list ul li {
+			float: left;
+			height: 39px;
+			line-height: 39px;
+			padding: 0 20px;
+			text-align: center;
+			cursor: pointer;
+			background-color: white;
+		}
+/*
+		.tab .tab_list ul li:hover{
+			color: red;
+		}
+*/
+		.tab .tab_list ul .current {
+			background-color:red;
+			color: azure;
+		} 
+		.tab .tab_con .item {
+			display: none;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="tab">
+		<div class="tab_list">
+			<ul>
+				<li>商品介绍</li>
+				<li>规格与包装</li>
+				<li>售后保障</li>
+				<li>商品评价</li>
+				<li>手机社区</li>
+			</ul>
+		</div>
+		<br/><br/>
+		<div class="tab_con">
+			<div class="item">
+			商品介绍模块内容
+			</div>
+			<div class="item">
+			规格
+			</div>
+			<div class="item">
+			hhhh
+			</div>
+			<div class="item">
+			xxxx
+			</div>
+			<div class="item">
+			yyy
+			</div>
+		</div>
+		<script>
+			var li=document.querySelector('ul').querySelectorAll('li');
+			var item=document.querySelectorAll('.item');
+			
+			for (var i=0;i<li.length;i++){
+				li[i].setAttribute('index',i);
+				li[i].onclick=function(){
+					for(var i=0;i<li.length;i++){
+						li[i].className='';
+					}
+					this.className='current';
+					
+					var index=this.getAttribute('index');
+					
+					for(var i=0;i<item.length;i++){
+						item[i].style.display='none';
+					}
+					item[index].style.display='block';
+				}
+			}
+		</script>
+	</div>
+</body>
+</html>
